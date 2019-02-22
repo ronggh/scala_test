@@ -1,19 +1,21 @@
 // These are meant to be typed into the REPL. You can also run
 // scala -Xnojline < repl-session.scala to run them all at once.
 
-// 定长数组
+// 定长数组:Array，默认初始化为0
 val nums = new Array[Int](10)
 
 val s = Array("Hello", "World")
+// 重新赋值s(0)
 s(0) = "Goodbye"
 s
 
 
-// 变长 数组缓冲
+// 变长数组:ArrayBuffer
 import scala.collection.mutable.ArrayBuffer
 
 val b = ArrayBuffer[Int]()
-val b2 = new ArrayBuffer[Int] // If you use new, the () is optional
+// If you use new, the () is optional
+val b2 = new ArrayBuffer[Int]
 
 b += 1
 b += (1, 2, 3, 5)

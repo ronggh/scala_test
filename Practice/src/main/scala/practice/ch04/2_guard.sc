@@ -2,7 +2,7 @@
 // scala -Xnojline < repl-session.scala to run them all at once.
 
 //如果匹配，则把字符转换成10进制。
-
+// case中可以带守卫
 for (ch <- "+-3!") {
   var sign = 0
   var digit = 0
@@ -10,6 +10,7 @@ for (ch <- "+-3!") {
   ch match {
     case '+' => sign = 1
     case '-' => sign = -1
+    // 守卫
     case _ if Character.isDigit(ch) => digit = Character.digit(ch, 10)
     case _ => sign = 0
   }

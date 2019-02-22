@@ -13,6 +13,7 @@ for (ch <- "+-!") {
   println(sign)
 }
 
+// math也可以有返回值
 for (ch <- "+-!") {
 
   sign = ch match {
@@ -23,7 +24,7 @@ for (ch <- "+-!") {
   println(sign)
 }
 
-
+// match可以匹配Java中的类
 import java.awt._
 
 val color = SystemColor.textText 

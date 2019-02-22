@@ -1,5 +1,4 @@
-//package com.atguigu.scala.ch11.sec09
-
+// 样例类是专为模式匹配用的
 abstract class Amount
 case class Dollar(value: Double) extends Amount
 case class Currency(value: Double, unit: String) extends Amount

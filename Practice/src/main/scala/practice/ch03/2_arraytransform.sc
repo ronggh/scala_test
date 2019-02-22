@@ -1,39 +1,39 @@
 
 val a = Array(2, 3, 5, 7, 11)
 
-// 产生新的数组
+// 产生新的数组,通过 yield
 val result = for (elem <- a) yield 2 * elem
 
 
 for (elem <- a if elem % 2 == 0) yield 2 * elem
 
-
+// filter()方法 _代表对其中的每一个元素
 a.filter(_ % 2 == 0).map(2 * _)
 
 
 // 常用方法
 import scala.collection.mutable.ArrayBuffer
 
-// 求和
+// 求和 sum
 Array(1, 7, 2, 9).sum
 
-//最大排序
+//最大排序 max
 ArrayBuffer("Mary", "had", "a", "little", "lamb").max
 
 val b = ArrayBuffer(1, 7, 2, 9)
 
-//排序
+//排序 sorted
 val bSorted = b.sorted
 
 val a1 = Array(1, 7, 2, 9)
-
+// 快排
 scala.util.Sorting.quickSort(a1)
 
 a1
 
-// 形成String
+// 形成String，以指定串连接
 a1.mkString(" and ")
-
+// 指定前缀，连接串和后缀
 a1.mkString("<", ",", ">")
 
 a1.toString
@@ -46,10 +46,10 @@ import scala.collection.mutable.ArrayBuffer
 val a2 = Array(1, -2, 3, -4, 5)
 val b2 = ArrayBuffer(1, 7, 2, 9)
 
-// 统计大于0的个数
+// 统计大于0的个数，count()
 a2.count(_ > 0)
 
-//
+// 添加
 b2.append(1, 7, 2, 8)
 
 b2

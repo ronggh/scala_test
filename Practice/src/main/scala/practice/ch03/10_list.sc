@@ -11,15 +11,17 @@ val digits = List(4, 2)
 
 9 :: (4 :: (2 :: Nil))
 
-def sum(lst: List[Int]): Int = if (lst == Nil) 0 else lst.head + sum(lst.tail)
+// 求和方式一
+def sum_1(lst: List[Int]): Int = if (lst == Nil) 0 else lst.head + sum_1(lst.tail)
 
-sum(List(9, 4, 2))
+sum_1(List(9, 4, 2))
 
-def sum(lst: List[Int]): Int = lst match {
+// 求和方式二
+def sum_2(lst: List[Int]): Int = lst match {
   case Nil => 0
-  case h :: t => h + sum(t) // h is lst.head, t is lst.tail
+  case h :: t => h + sum_2(t) // h is lst.head, t is lst.tail
 }
 
-sum(List(9, 4, 2))
-
+sum_2(List(9, 4, 2))
+// 求和方式三
 List(9, 4, 2).sum

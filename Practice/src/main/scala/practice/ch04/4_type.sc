@@ -1,6 +1,8 @@
 // These are meant to be typed into the REPL. You can also run
 // scala -Xnojline < repl-session.scala to run them all at once.
 
+
+// 匹配类型的时候，必须要加一个变量名
 for (obj <- Array(42, "42", BigInt(42), BigInt, 42.0)) {
 
   val result = obj match {
@@ -15,6 +17,8 @@ for (obj <- Array(42, "42", BigInt(42), BigInt, 42.0)) {
 }
 
 // Map(42 -> "Fred")也映射到Map[String, Int]，显然不对，运行期已经没有类型信息
+// 匹配操作发生在运行期间，所以不能匹配一个泛型
+// 但Array[Int]是个例外
 for (obj <- Array(Map("Fred" -> 42), Map(42 -> "Fred"), Array(42), Array("Fred"))) {
 
   val result = obj match {

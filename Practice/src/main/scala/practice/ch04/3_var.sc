@@ -10,6 +10,7 @@ for (i <- str.indices) {
   str(i) match {
     case '+' => sign = 1
     case '-' => sign = -1
+    // case 中使用变量，匹配的表达式会被赋值给变量
     case ch if Character.isDigit(ch) => digit = Character.digit(ch, 10)
     case _ => 
   }
@@ -17,6 +18,7 @@ for (i <- str.indices) {
   println(str(i) + " " + sign + " " + digit)
 }
 
+// 变量匹配
 import scala.math._
 val x = random
 x match {

@@ -1,5 +1,4 @@
-//package com.atguigu.scala.ch11.sec10
-
+// 样例类中的copy()方法
 abstract class Amount
 case class Dollar(value: Double) extends Amount
 case class Currency(value: Double, unit: String) extends Amount

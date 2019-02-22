@@ -13,13 +13,26 @@ for (arr <- Array(Array(0), Array(1, 0), Array(0, 1, 0), Array(1, 1, 0))) {
   println(result)
 }
 
-// 匹配列表
+// 匹配列表1
 for (lst <- Array(List(0), List(1, 0), List(0, 0, 0), List(1, 0, 0))) {
 
   val result = lst match {
     case 0 :: Nil => "0"
     case x :: y :: Nil => x + " " + y
     case 0 :: tail => "0 ..."
+    case _ => "something else"
+  }
+
+  println(result)
+}
+
+// 匹配列表2
+for (lst <- Array(List(0), List(1, 0), List(0, 0, 0), List(1, 0, 0))) {
+
+  val result = lst match {
+    case List(0) => "only 0"
+    case List(x,y) => x + " " + y
+    case List(0,x,y) => "0 ..."
     case _ => "something else"
   }
 

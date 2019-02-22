@@ -1,6 +1,7 @@
 // These are meant to be typed into the REPL. You can also run
 // scala -Xnojline < 12_nest.sc to run them all at once.
 
+// 匹配嵌套结构
 abstract class Item
 case class Article(description: String, price: Double) extends Item
 case class Bundle(description: String, discount: Double, items: Item*) extends Item

@@ -7,12 +7,12 @@
 val t = (1, 3.14, "Fred")
 
 val second = t._2
-
+// t._1 也可以写成 t _1
 val first = t _1
 
 //变量赋值
 val (first1, second1, third) = t
-
+// 忽略第三个元素值，即不需要它
 val (first2, second2, _) = t
 
 
