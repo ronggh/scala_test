@@ -1,6 +1,8 @@
 // These are meant to be typed into the REPL. You can also run
 // scala -Xnojline < repl-session.scala to run them all at once.
 
+// 控制抽象  函数
+
 def runInThread(block: () => Unit) {
   new Thread {
     override def run() { block() }

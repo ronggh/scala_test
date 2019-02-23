@@ -5,6 +5,7 @@ class Person(val name: String) {
   override def toString = getClass.getName + "[name=" + name + "]"
 }
 
+// 匿名子类
 val alien = new Person("Fred") {
   def greeting = "Greetings, Earthling! My name is Fred."
 }

@@ -1,4 +1,4 @@
-package com.atguigu.scala.ch10.sec11
+package com.ch10.sec11
 
 import java.io._
 import java.util._

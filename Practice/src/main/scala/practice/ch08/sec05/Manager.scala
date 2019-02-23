@@ -1,5 +1,6 @@
-package com.sec05
+package com.ch08.sec05
 
+// 引入包，_相当于java中的*
 import java.awt._
 
 

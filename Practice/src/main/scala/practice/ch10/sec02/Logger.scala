@@ -1,4 +1,4 @@
-package com.atguigu.scala.ch10.sec02
+package com.ch10.sec02
 
 import java.io.Serializable
 

@@ -1,6 +1,7 @@
-package com.sec03
+package com.ch08.sec03
 
 // 定义在父包
+// package object定义一个包对象，在包对象里可以定义常量和函数
 package object people {
   val defaultName = "John Q. Public"
 }

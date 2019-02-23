@@ -1,7 +1,7 @@
+package com.ch09.sec05
 // These are meant to be typed into the REPL. You can also run
 // scala -Xnojline < repl-session.scala to run them all at once.
 
-package com.atguigu.scala.ch09.sec05
 
 class Person(val name: String, val age: Int) {
   override def toString = getClass.getName + "[name=" + name +

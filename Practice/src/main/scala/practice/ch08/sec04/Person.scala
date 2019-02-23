@@ -1,4 +1,4 @@
-package com.sec04
+package com.ch08.sec04
 
 package object people {
   val defaultName = "John Q. Public"

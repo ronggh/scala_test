@@ -4,6 +4,7 @@ class Person {
   var name = ""
 }
 
+// 类Employee继承自类Person
 class Employee extends Person {
   var salary = 0.0
   def description = "An employee with name " + name + " and salary " + salary

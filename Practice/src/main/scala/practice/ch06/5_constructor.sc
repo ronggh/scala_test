@@ -2,7 +2,7 @@
 // scala -Xnojline < repl-session.scala to run them all at once.
 import java.util.Properties
 import java.io.FileReader
-
+// 主构造方法直接跟在类名后
 class Person(val name: String = "", val age: Int = 0) {
   println("Just constructed another person")
   def description = name + " is " + age + " years old"
@@ -28,6 +28,8 @@ class Person2(val name: String, private var age: Int) {
   def birthday() { age += 1 }
 }
 
+// 如果参数至少被一个方法使用，该参数将自动升格为字段，否则，该参数
+//将不被保存为字段,name在主构造方法中使用过，会升格为字段，可以直接使用p.name
 val p = new Person2("Fred", 42)
 p.name
 //p.age // Error--it's private
@@ -36,7 +38,8 @@ p.description
 
 
 
-
+//辅助构造器名称为this，通过不同参数进行区分，每一个辅助构造器都必须
+//以主构造器或者已经定义的辅助构造器的调用开始：
 class Person3 {
   private var name = ""
   private var age = 0

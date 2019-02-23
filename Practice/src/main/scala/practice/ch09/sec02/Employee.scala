@@ -2,6 +2,7 @@ package com.ch09.sec02
 
 class Person {
   var name = ""
+  // 重写父类的方法必须要加override
   override def toString = getClass.getName + "[name=" + name + "]"
 }
 

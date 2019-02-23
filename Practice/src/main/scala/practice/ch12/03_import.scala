@@ -1,4 +1,4 @@
-package com.atguigu.scala.ch12.sec03
+package com.ch12.sec03
 
 import scala.language.implicitConversions
 import scala.math._

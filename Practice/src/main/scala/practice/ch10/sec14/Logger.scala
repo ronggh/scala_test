@@ -1,6 +1,6 @@
-package com.atguigu.scala.ch10.sec14
+package com.ch10.sec14
 
-import java.io._
+
 
 trait Logger {
   def log(msg: String)

@@ -1,4 +1,4 @@
-package com.atguigu.scala.ch12.sec01
+package com.ch12.sec01
 
 import scala.language.implicitConversions
 import scala.math._
@@ -18,6 +18,7 @@ object Fraction {
 }
 
 object Main extends App {
+  // 定义一个隐式转换,没有这句，下面的3 * Fraction(4, 5)会报错
   implicit def int2Fraction(n: Int) = Fraction(n, 1)
 
   val result = 3 * Fraction(4, 5) // Calls int2Fraction(3)

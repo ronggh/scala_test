@@ -1,5 +1,6 @@
-package com.atguigu.scala.ch10.sec03
+package com.ch10.sec03
 
+// 特质可以有实现的方法
 trait ConsoleLogger {
   def log(msg: String) { println(msg) }
 }

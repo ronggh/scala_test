@@ -1,4 +1,4 @@
-package com.atguigu.scala.ch10.sec08
+package com.ch10.sec08
 
 trait Logger {
   def log(msg: String)

@@ -1,4 +1,4 @@
-package com.atguigu.scala.ch09.sec09
+package com.ch09.sec09
 
 // Compile without, then with -Xcheckinit
 
@@ -11,11 +11,12 @@ class Ant extends Creature {
   override val range = 2
 }
 
-// 提前定义
+// 提前定义override val range = 3
 class Bug extends {
   override val range = 3
 } with Creature
 
+// 懒加载
 class Creature1 {
   lazy val range: Int = 10
   val env: Array[Int] = new Array[Int](range)

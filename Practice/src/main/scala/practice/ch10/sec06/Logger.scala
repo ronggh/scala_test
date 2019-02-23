@@ -1,4 +1,4 @@
-package com.atguigu.scala.ch10.sec06
+package com.ch10.sec06
 
 trait Logger {
   def log(msg: String) // This method is abstract

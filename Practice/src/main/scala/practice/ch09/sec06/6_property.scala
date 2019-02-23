@@ -1,6 +1,6 @@
 // These are meant to be typed into the REPL. You can also run
 // scala -Xnojline < repl-session.scala to run them all at once.
-package com.atguigu.scala.ch09.sec06
+package com.ch09.sec06
 
 // It is more common to override an abstract def with a val
 

@@ -1,6 +1,6 @@
 // These are meant to be typed into the REPL. You can also run
 // scala -Xnojline < repl-session.scala to run them all at once.
-
+// 类定义
 // class定义类，和java类似，不用声明public
 class Counter {
   private var value = 0 // You must initialize the field

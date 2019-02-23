@@ -1,6 +1,7 @@
 // These are meant to be typed into the REPL. You can also run
 // scala -Xnojline < repl-session.scala to run them all at once.
-
+// getter,setter方法
+// getter()方法与字段同名，setter()方法为字段名_
 class Person {
   var age = 0
 }

@@ -1,4 +1,4 @@
-package com.atguigu.scala.ch12.sec02
+package com.ch12.sec02
 
 import java.io.File
 import scala.io.Source

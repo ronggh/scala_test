@@ -1,5 +1,5 @@
 package com.ch09.sec03
-
+// isInstanceOf(),asInstanceOf(),classOf()
 class Person {
   var name = ""
   override def toString = getClass.getName + "[name=" + name + "]"
