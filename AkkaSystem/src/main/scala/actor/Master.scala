@@ -1,4 +1,4 @@
-package com.atguigu.actor
+package com.alan.actor
 
 import akka.actor.{Actor, ActorSystem, Props}
 
@@ -9,7 +9,7 @@ import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext.Implicits.global
 
 /**
-  * Created by wuyufei on 03/09/2017.
+  * Master
   */
 
 class Master extends Actor{

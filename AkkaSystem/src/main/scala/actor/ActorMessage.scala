@@ -1,4 +1,4 @@
-package com.atguigu.actor
+package com.alan.actor
 
 /**
   * Created by wuyufei on 03/09/2017.

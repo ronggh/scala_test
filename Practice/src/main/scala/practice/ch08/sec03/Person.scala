@@ -14,6 +14,6 @@ package people{
 }
 
 object Sec03Main extends App {
-  val john = new com.sec03.people.Person
+  val john = new com.ch08.sec03.people.Person
   println(john.description)
 }

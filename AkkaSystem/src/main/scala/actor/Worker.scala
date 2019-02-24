@@ -1,4 +1,4 @@
-package com.atguigu.actor
+package com.alan.actor
 
 import java.util.UUID
 

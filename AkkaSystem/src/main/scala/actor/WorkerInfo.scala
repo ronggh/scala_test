@@ -1,8 +1,6 @@
-package com.atguigu.actor
+package com.alan.actor
 
-/**
-  * Created by wuyufei on 03/09/2017.
-  */
+// WorkerInfo
 class WorkerInfo(val id : String, val workerHost : String, val memory : String, val cores : String) {
 
   var lastHeartbeat : Long = System.currentTimeMillis()

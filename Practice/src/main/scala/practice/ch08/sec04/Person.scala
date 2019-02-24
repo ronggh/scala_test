@@ -5,7 +5,7 @@ package object people {
 }
 
 object Sec04Main extends App {
-  val john = new com.sec04.people.Person
+  val john = new com.ch08.sec04.people.Person
   println(john.description)
 }
 
